@@ -1,0 +1,195 @@
+/* Animación para los títulos */
+h1, h2, h3, h4, h5, h6 {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Animación para los párrafos */
+p {
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Animación para las imágenes */
+img {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Animación para los botones */
+.btn {
+    animation: bounceIn 2s ease forwards;
+}
+
+nav {
+    animation: slideInDown 2s ease forwards;
+}
+
+/* Animación para las filas de la tabla */
+.table tbody tr {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Animación para los elementos de la lista */
+li {
+    animation: fadeInLeft 1s ease forwards;
+}
+
+
+form {
+    animation: slideInUp 1s ease forwards;
+}
+
+
+footer {
+    animation: slideInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(2);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background-color: #f0f0f0; /* Color de fondo */
+    transition: background-color 0.3s; /* Transición para el cambio de color de fondo */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #167cc0; /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para el cambio de color de fondo y texto */
+}
+
+/* Estilos para la sección de contenido */
+.container {
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: box-shadow 0.3s; /* Transición para el cambio de sombra */
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-right: 10px; /* Margen derecho */
+    transition: transform 0.2s ease-in-out; /* Transición para el cambio de escala */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Escala aumentada al pasar el cursor */
+}
+
+/* Estilos para las cajas de texto */
+.caja {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: box-shadow 0.3s; /* Transición para el cambio de sombra */
+}
+
+.caja:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra aumentada al pasar el cursor */
+}
+
+/* Estilos para los títulos */
+h1, h2, h3 {
+    color: #167cc0; /* Color del título */
+    transition: color 0.3s; /* Transición para el cambio de color de texto */
+}
+
+/* Estilos para las imágenes */
+img {
+    max-width: 25%; /* Ancho máximo del contenedor */
+    height: auto; /* Altura automática */
+    display: block; /* Mostrar como bloque */
+    margin: 0 auto 20px; /* Margen inferior y centrado horizontal */
+    transition: transform 0.2s ease-in-out; /* Transición para el cambio de escala */
+}
+
+img:hover {
+    transform: scale(1.05); /* Escala aumentada al pasar el cursor */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #167cc0; /* Color de fondo del pie de página */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones para el cambio de color de fondo y texto */
+}
+/* Estilos para la tabla */
+.table {
+    background-color: #fff; /* Color de fondo de la tabla */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones para el cambio de color de fondo y sombra */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+    transition: background-color 0.3s; /* Transición para el cambio de color de fondo */
+}
